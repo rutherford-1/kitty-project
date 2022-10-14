@@ -1,0 +1,112 @@
+h1 {
+
+}
+a {
+
+}
+a.button {
+
+}
+
+.left {
+	background-color: lightgoldenrodyellow;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.right {
+	background-color: lightblue;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+
+.cat {
+	position: absolute;
+	left: 50%;
+	width: 20px;
+	height: 100px;
+	bottom: 25%;
+	background-color: black;
+}
+
+.yarn {
+	position: absolute;
+	left: 25%;
+	width: 50px;
+	height: 50px;
+	bottom: 75%;
+	background-color: pink;
+	transition: bottom 2500ms;
+}
+
+body.body-state1 .yarn,
+body.body-state2 .yarn {
+	transition: none;
+}
+
+body.body-state5 .yarn,
+body.body-state7 .yarn,
+body.body-state8 .yarn {
+	bottom: 25%;
+}
+
+body.body-state11 .yarn {
+	display: none;
+}
+
+.mouse {
+	position: absolute;
+	left: 75%;
+	width: 50px;
+	height: 50px;
+	bottom: 75%;
+	background-color: grey;
+	transition: bottom 2500ms;
+}
+
+body.body-state1 .mouse,
+body.body-state2 .mouse {
+	transition: none;
+}
+
+body.body-state6 .mouse,
+body.body-state9 .mouse,
+body.body-state10 .mouse {
+	bottom: 25%;
+}
+
+body.body-state11 .mouse {
+	display: none;
+}
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5,
+.state6,
+.state7,
+.state8,
+.state9,
+.state10,
+.state11 {
+	display: none;	
+}
+
+body.body-state1 .state1{display:  block;}
+body.body-state2 .state2{display:  block;}
+body.body-state3 .state3{display:  block;}
+body.body-state4 .state4{display:  block;}
+body.body-state5 .state5{display:  block;}
+body.body-state6 .state6{display:  block;}
+body.body-state7 .state7{display:  block;}
+body.body-state8 .state8{display:  block;}
+body.body-state9 .state9{display:  block;}
+body.body-state10 .state10{display:  block;}
+body.body-state11 .state11{display:  block;}

@@ -29,20 +29,22 @@ a.button {
 .cat {
 	position: absolute;
 	left: 50%;
-	width: 20px;
-	height: 100px;
-	bottom: 25%;
-	background-color: black;
+	width: 400px;
+	height: 400px;
+	bottom: 0%;
+	margin-left: -200px;
+	background:  url('../img/kitty1A.png') no-repeat;
 }
 
 .yarn {
 	position: absolute;
-	left: 25%;
-	width: 50px;
-	height: 50px;
-	bottom: 75%;
-	background-color: pink;
-	transition: bottom 2500ms;
+	left: 15%;
+	width: 75px;
+	height: 75px;
+	top: 100px;
+	margin-left: -37.5px;
+	background:  url('../img/yarn.png') no-repeat 0 0; 
+	transition: top 2500ms;
 }
 
 body.body-state1 .yarn,
@@ -52,8 +54,9 @@ body.body-state2 .yarn {
 
 body.body-state5 .yarn,
 body.body-state7 .yarn,
-body.body-state8 .yarn {
-	bottom: 25%;
+body.body-state8 .yarn,
+body.body-state12 .yarn {
+	top: 85%;
 }
 
 body.body-state11 .yarn {
@@ -62,12 +65,13 @@ body.body-state11 .yarn {
 
 .mouse {
 	position: absolute;
-	left: 75%;
-	width: 50px;
-	height: 50px;
-	bottom: 75%;
-	background-color: grey;
-	transition: bottom 2500ms;
+	left: 85%;
+	width: 75px;
+	height: 75px;
+	top: 100px;
+	margin-left: -37.5px;
+	background:  url('../img/mouse.png') no-repeat 0 0; 
+	transition: top 2500ms;
 }
 
 body.body-state1 .mouse,
@@ -77,12 +81,31 @@ body.body-state2 .mouse {
 
 body.body-state6 .mouse,
 body.body-state9 .mouse,
-body.body-state10 .mouse {
-	bottom: 25%;
+body.body-state10 .mouse,
+body.body-state13 .mouse {
+	top:  85%;
 }
 
 body.body-state11 .mouse {
 	display: none;
+}
+
+/* cat images */
+
+body.body-state7 .cat,
+body.body-state9 .cat,
+body.body-state12 .cat,
+body.body-state13 .cat {
+	background-image:  url('../img/kitty3A.png');
+}
+
+body.body-state8 .cat,
+body.body-state10 .cat {
+	background-image:  url('../img/kitty4A.png');
+}
+
+body.body-state11 .cat {
+	background-image:  url('../img/kitty2A.png');
 }
 
 .state1,
@@ -95,7 +118,9 @@ body.body-state11 .mouse {
 .state8,
 .state9,
 .state10,
-.state11 {
+.state11,
+.state12,
+.state13 {
 	display: none;	
 }
 
@@ -110,3 +135,5 @@ body.body-state8 .state8{display:  block;}
 body.body-state9 .state9{display:  block;}
 body.body-state10 .state10{display:  block;}
 body.body-state11 .state11{display:  block;}
+body.body-state12 .state12{display:  block;}
+body.body-state13 .state13{display:  block;}

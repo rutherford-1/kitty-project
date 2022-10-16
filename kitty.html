@@ -16,6 +16,7 @@
 		</div>
 		<!-- Select yarn or mouse -->
 		<div class="state2">
+			<h1>Select a toy</h1>
 			<a href="#" class="button" onclick="changeState(3);">Yarn</a>
 			<a href="#" class="button" onclick="changeState(4);">Mouse</a>
 			<a href="#" class="button" onclick="changeState(1);">Exit</a>
@@ -45,7 +46,7 @@
 		<!-- Yarn - he's tangled! -->
 		<div class="state8">
 			<h1>Oh no! He's tangled up!</h1>
-			<a href="#" class="button" onclick="helpYarn();">Help</a>
+			<a href="#" class="button" onclick="changeState(12);">Help</a>
 		</div>
 		<!-- Mouse - he loves it! -->
 		<div class="state9">
@@ -56,13 +57,25 @@
 		<!-- Mouse - it went under the table! -->
 		<div class="state10">
 			<h1>Oh no! The mouse went under the table!</h1>
-			<a href="#" class="button" onclick="helpMouse();">Help</a>
+			<a href="#" class="button" onclick="changeState(13);">Help</a>
 		</div>
 		<!-- He's bored and naps -->
 		<div class="state11">
 			<h1>Kitty is bored... he went to take a nap</h1>
 			<a href="#" class="button" onclick="changeState(1);">Exit</a>
 		</div>	
+		<!-- Yarn - thank you! -->
+		<div class="state12">
+			<h1>Kitty says thank you!</h1>
+			<a href="#" class="button" onclick="changeState(2);">Again</a>
+			<a href="#" class="button" onclick="changeState(1);">Exit</a>
+		</div>
+		<!-- Mouse - thank you! -->
+		<div class="state13">
+			<h1>Kitty says thank you!</h1>
+			<a href="#" class="button" onclick="changeState(2);">Again</a>
+			<a href="#" class="button" onclick="changeState(1);">Exit</a>
+		</div>
 	</div>
 	<div class="right">
 		<div class="ground"></div>

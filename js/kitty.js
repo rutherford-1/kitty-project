@@ -22,7 +22,7 @@ var changeState = function(state) {
 	else if (state==5) {
 		var success=setTimeout( function() {
 			var rand = Math.round(Math.random()*10);
-			if (rand > 5) {
+			if (rand > 10) {
 				changeState(7);} // success-yarn
 			else if (rand > 2) {
 				changeState(8);} //tangled-yarn
@@ -57,20 +57,4 @@ var countdownFunction = function(state,countID) {
 			changeState(state);
 		}
 	}, 1000);
-}
-
-var helpYarn = function() {
-	var rand = Math.round(Math.random()*10);
-	if (rand > 5) {
-		changeState(7);} // success-yarn
-	else {
-		changeState(11);} //bored
-}
-
-var helpMouse = function() {
-	var rand = Math.round(Math.random()*10);
-	if (rand > 5) {
-		changeState(9);} // success-mouse
-	else {
-		changeState(11);} //bored
 }

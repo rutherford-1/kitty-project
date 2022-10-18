@@ -5,73 +5,74 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Play With the Kitty!</title>
 	<link rel="stylesheet" type="text/css" href="css/kitty.css">
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="js/kitty.js"></script>
 </head>
 <body class="body-state1">
 	<div class="left">
 		<!-- Starting page -->
-		<div class="state1">
+		<div class="interface state1">
 			<h1>Play With the Kitty!</h1>
 			<a href="#" class="button" onclick="changeState(2);">Start</a>
 		</div>
 		<!-- Select yarn or mouse -->
-		<div class="state2">
+		<div class="interface state2">
 			<h1>Select a toy</h1>
-			<a href="#" class="button" onclick="changeState(3);">Yarn</a>
-			<a href="#" class="button" onclick="changeState(4);">Mouse</a>
-			<a href="#" class="button" onclick="changeState(1);">Exit</a>
+			<a href="#" class="button2" onclick="changeState(3);">Yarn</a>
+			<a href="#" class="button2" onclick="changeState(4);">Mouse</a>
+			<a href="#" class="button2" onclick="changeState(1);">Exit</a>
 		</div>
 		<!-- Yarn - Countdown -->
-		<div class="state3">
+		<div class="interface state3">
 			<h1 id="countdown1">3</h1>
 		</div>
 		<!-- Mouse - Countdown -->
-		<div class="state4">
+		<div class="interface state4">
 			<h1 id="countdown2">3</h1>
 		</div>
 		<!-- Yarn - Drop toy -->
-		<div class="state5">
+		<div class="interface state5">
 			<h1>Here you go, kitty!</h1>
 		</div>
 		<!-- Mouse - Drop toy -->
-		<div class="state6">
+		<div class="interface state6">
 			<h1>Here you go, kitty!</h1>
 		</div>
 		<!-- Yarn - he loves it! -->
-		<div class="state7">
+		<div class="interface state7">
 			<h1>He loves it!!</h1>
 			<a href="#" class="button" onclick="changeState(2);">Again</a>
 			<a href="#" class="button" onclick="changeState(1);">Exit</a>
 		</div>		
 		<!-- Yarn - he's tangled! -->
-		<div class="state8">
+		<div class="interface state8">
 			<h1>Oh no! He's tangled up!</h1>
 			<a href="#" class="button" onclick="changeState(12);">Help</a>
 		</div>
 		<!-- Mouse - he loves it! -->
-		<div class="state9">
+		<div class="interface state9">
 			<h1>He loves it!!</h1>
 			<a href="#" class="button" onclick="changeState(2);">Again</a>
 			<a href="#" class="button" onclick="changeState(1);">Exit</a>
 		</div>
 		<!-- Mouse - it went under the table! -->
-		<div class="state10">
+		<div class="interface state10">
 			<h1>Oh no! The mouse went under the table!</h1>
 			<a href="#" class="button" onclick="changeState(13);">Help</a>
 		</div>
 		<!-- He's bored and naps -->
-		<div class="state11">
+		<div class="interface state11">
 			<h1>Kitty is bored... he went to take a nap</h1>
 			<a href="#" class="button" onclick="changeState(1);">Exit</a>
 		</div>	
 		<!-- Yarn - thank you! -->
-		<div class="state12">
+		<div class="interface state12">
 			<h1>Kitty says thank you!</h1>
 			<a href="#" class="button" onclick="changeState(2);">Again</a>
 			<a href="#" class="button" onclick="changeState(1);">Exit</a>
 		</div>
 		<!-- Mouse - thank you! -->
-		<div class="state13">
+		<div class="interface state13">
 			<h1>Kitty says thank you!</h1>
 			<a href="#" class="button" onclick="changeState(2);">Again</a>
 			<a href="#" class="button" onclick="changeState(1);">Exit</a>
@@ -82,6 +83,10 @@
 		<div class="cat"></div>
 		<div class="yarn"></div>
 		<div class="mouse"></div>
+		<div class="lets-play" id="lets-play"></div>
+		<div class="zzz" id="zzz"></div>
+		<div class="help" id="help"></div>
+		<div class="thank-you" id="thank-you"></div>
 	</div>
 
 </body>

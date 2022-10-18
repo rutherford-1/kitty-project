@@ -1,11 +1,48 @@
 h1 {
-
+	font-size: 35px;
 }
 a {
 
 }
-a.button {
 
+body {
+	font-family: Varela Round, Geneva, Arial;
+}
+
+.interface {
+	text-align: center;
+	padding: 20px;
+}
+
+a.button {
+	display: inline-block;
+	color: white;
+	background-color: lightblue;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	padding: 15px 25px;
+	transition: background-color 300ms;
+}
+
+a.button2 {
+	display: inline-block;
+	color: lightblue;
+	text-decoration: none;
+	font-size: 25px;
+	text-transform: uppercase;
+	padding-left: 7px;
+	padding-right: 7px;
+	transition: color 300ms;	
+}
+
+a.button:hover {
+	background-color: pink;
+}
+
+a.button2:hover {
+	color: pink;
 }
 
 .left {
@@ -45,6 +82,62 @@ a.button {
 	margin-left: -37.5px;
 	background:  url('../img/yarn.png') no-repeat 0 0; 
 	transition: top 2500ms;
+}
+
+.lets-play {
+	position: absolute;
+	bottom:  350px;
+	left: 60%;
+	background: url('../img/lets-play.png') no-repeat 0 0;
+	width: 190px;
+	height: 70px;
+	display: none;
+}
+
+.lets-play.show {
+	display: block;
+}
+
+.zzz {
+	position: absolute;
+	bottom:  300px;
+	left: 65%;
+	background: url('../img/zzz.png') no-repeat 0 0;
+	width: 190px;
+	height: 70px;
+	display: none;
+}
+
+.zzz.show {
+	display: block;
+}
+
+.help {
+	position: absolute;
+	bottom:  300px;
+	left: 10%;
+	background: url('../img/help.png') no-repeat 0 0;
+	width: 190px;
+	height: 70px;
+	display: none;
+}
+
+.help.show {
+	display: block;
+}
+
+.thank-you {
+	position: absolute;
+	bottom:  350px;
+	left: 5%;
+	background: url('../img/thank-you.png') no-repeat 0 0;
+	width: 190px;
+	height: 70px;
+	display: none;
+}
+
+.thank-you.show {
+	display: block;
 }
 
 body.body-state1 .yarn,
